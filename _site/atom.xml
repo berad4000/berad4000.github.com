@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Fabio Souto</title>
+ <link href="http://fsouto.github.com/atom.xml" rel="self"/>
+ <link href="http://fsouto.github.com"/>
+ <updated>2012-05-28T17:15:55+02:00</updated>
+ <id>http://fsouto.github.com</id>
+ <author>
+   <name>Fabio Souto</name>
+   <email>fsoutomoure@gmail.com</email>
+ </author>
+
+ 
+ <entry>
+   <title>My website prelaunch checklist</title>
+   <link href="http://fsouto.github.com/2012/05/my-website-prelaunch-checklist"/>
+   <updated>2012-05-18T00:00:00+02:00</updated>
+   <id>http://fsouto.github.com/2012/05/my-website-prelaunch-checklist</id>
+   <content type="html">&lt;p&gt;This is a document that I&amp;#8217;ve been updating during 3+ years. Obviously It&amp;#8217;s not mandatory to meet all the requirements, I just use it as a reference and it helps me to reinforce good practices. Feel free to make suggestions.&lt;/p&gt;
+
+&lt;h3 id='application_testing'&gt;Application testing&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ensure all test are passing&lt;/li&gt;
+
+&lt;li&gt;Stop verbose error reporting, then check 404 and 500 pages&lt;/li&gt;
+
+&lt;li&gt;Security test&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='backups'&gt;Backups&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Set &lt;a href='http://www.gfi.com/blog/create-complex-secure-backup-strategy/'&gt;backup strategy&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;Test backups&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='load_time'&gt;Load time&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Load test (&lt;a href=''&gt;blitz.io&lt;/a&gt;, &lt;a href='http://jmeter.apache.org/'&gt;JMeter&lt;/a&gt;&amp;#8230;)&lt;/li&gt;
+
+&lt;li&gt;Check number of HTTP requests&lt;/li&gt;
+
+&lt;li&gt;Add expires headers&lt;/li&gt;
+
+&lt;li&gt;Put JS at bottom&lt;/li&gt;
+
+&lt;li&gt;Compress/minimize js/css&lt;/li&gt;
+
+&lt;li&gt;Serve gzipped content&lt;/li&gt;
+
+&lt;li&gt;Optimize images&lt;/li&gt;
+
+&lt;li&gt;Caching&lt;/li&gt;
+
+&lt;li&gt;Check indexes in the database&lt;/li&gt;
+
+&lt;li&gt;Use CDN&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='monitoring'&gt;Monitoring&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Server monitoring (&lt;a href='http://munin-monitoring.org/'&gt;Munin&lt;/a&gt;, &lt;a href='http://www.nagios.org/'&gt;Nagios&lt;/a&gt;&amp;#8230;)&lt;/li&gt;
+
+&lt;li&gt;Setup web analytics&lt;/li&gt;
+
+&lt;li&gt;Setup Feedburner&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='standards'&gt;Standards&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Accesibility validation&lt;/li&gt;
+
+&lt;li&gt;HTML validation&lt;/li&gt;
+
+&lt;li&gt;JS validation&lt;/li&gt;
+
+&lt;li&gt;CSS validation&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.opensearch.org/'&gt;Opensearch&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='design'&gt;Design&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Adequate text-to-background contrast&lt;/li&gt;
+
+&lt;li&gt;Readability&lt;/li&gt;
+
+&lt;li&gt;Navigation is easy to identify&lt;/li&gt;
+
+&lt;li&gt;Favicon&lt;/li&gt;
+
+&lt;li&gt;Apple icons&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='accesibility'&gt;Accesibility&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Images with alt text&lt;/li&gt;
+
+&lt;li&gt;Test different resolutions&lt;/li&gt;
+
+&lt;li&gt;Test with Internet Explorer&lt;/li&gt;
+
+&lt;li&gt;Test on mobile devices&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='social'&gt;Social&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Check &lt;a href='http://ogp.me/'&gt;Opengraph&lt;/a&gt; tags&lt;/li&gt;
+
+&lt;li&gt;Add/test social buttons&lt;/li&gt;
+
+&lt;li&gt;Check social button integration with Google analytics&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='seo'&gt;SEO&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Redirect http://www to http://&lt;/li&gt;
+
+&lt;li&gt;Check meta tags&lt;/li&gt;
+
+&lt;li&gt;Add canonical tag to duplicated content&lt;/li&gt;
+
+&lt;li&gt;Sitemap.xml&lt;/li&gt;
+
+&lt;li&gt;Check url structure&lt;/li&gt;
+
+&lt;li&gt;Create a robots.txt&lt;/li&gt;
+
+&lt;li&gt;Page titles with keywords&lt;/li&gt;
+
+&lt;li&gt;Submit to search engines&lt;/li&gt;
+
+&lt;li&gt;Build some backlinks &lt;/li&gt;
+
+&lt;li&gt;Ensure semantical content&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>New site</title>
+   <link href="http://fsouto.github.com/2012/05/new-site"/>
+   <updated>2012-05-15T00:00:00+02:00</updated>
+   <id>http://fsouto.github.com/2012/05/new-site</id>
+   <content type="html">&lt;p&gt;I had this site a little bit abandoned, so I decided to rewrite it one more time. This time I opted for a simpler design but the biggest change is that I decided to abandon &lt;a href='https://www.djangoproject.com/'&gt;Django&lt;/a&gt; and create a static site.&lt;/p&gt;
+
+&lt;p&gt;Static sites can be hosted it on github pages, so I can save some MBs in the hosting. It&amp;#8217;s easy to publish new content, just make a commit to the forge. Moreover, this site doesn&amp;#8217;t need 90% of the functionality offered by Django, I was using a sledgehammer to crack nuts.&lt;/p&gt;
+
+&lt;p&gt;But of course I didn&amp;#8217;t create the HTML files from scratch, I use &lt;a href='http://jekyllrb.com/'&gt;Jekyll&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='jekyll'&gt;Jekyll?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a static site generator developed in Ruby. It has support for markdown and integration with github pages. With the help of &lt;a href='http://jekyllbootstrap.com/'&gt;Jekyll bootstrap&lt;/a&gt; I was able to create the new version in a couple of hours.&lt;/p&gt;
+
+&lt;p&gt;Jekyll is really simple, just run &lt;code&gt;jekyll --serve&lt;/code&gt; in your project folder and it will parse the markdown and create the site. The generated site will be in the &lt;code&gt;_site&lt;/code&gt; folder. Serve this folder with your static HTTP server (Nginx, Apache&amp;#8230;) and enjoy.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/lakshmivyas/hyde'&gt;Hyde&lt;/a&gt; is a similar project in Python, and it was my first option. I installed the new version but the documentation is really poor(at the time of writing). I decided to install the old version but I found &lt;a href='https://github.com/lakshmivyas/hyde/issues/54'&gt;this bug&lt;/a&gt;. I realize I was spending too much time for such a simple task. Time to abandon Hyde and embrace Jekyll.&lt;/p&gt;
+
+&lt;h3 id='design'&gt;Design&lt;/h3&gt;
+
+&lt;p&gt;I&amp;#8217;m not a designer but fortunately I had Twitter bootstrap and Google fonts to help me to create a readable design. I want to create long articles, so readability it&amp;#8217;s an important point. I tried many fonts until one day I discovered &lt;a href='http://stevelosh.com/'&gt;Steve Losh&lt;/a&gt; site, I shamelessly copied his font selection.&lt;/p&gt;
+
+&lt;h3 id='show_me_the_code'&gt;Show me the code&lt;/h3&gt;
+
+&lt;p&gt;The code &lt;a href='https://github.com/fsouto/fsouto.github.com'&gt;is available on Github&lt;/a&gt;, feel free to check it and make suggestions.&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>
