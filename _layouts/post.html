@@ -1,5 +1,19 @@
 ---
-layout: default
+layout: index
 ---
-{% include JB/setup %}
-{% include themes/fasouto/post.html %}
+<li>
+  <article>
+	<ul class='details'>
+		<li class='published-on'>{{ page.date | date: "%Y-%m-%d" }}</li>
+		{% for tag in page.tags %}
+		<li class='tagged'>{{ tag }}</li>
+		{% endfor %}		
+	</ul>
+{{ content }}
+	<p class='permalink'><a href='{{page.url}}#'>permalink</a></p>
+	</article>
+	{% assign post = page %}
+	{% include commenting.html %}
+</li>
+{% include commenting-activator.html %}
+
