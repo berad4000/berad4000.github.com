@@ -1,0 +1,176 @@
+<div class="page_wrapper">
+<!-- BOSB -->
+	<div class="sidebar right">
+	   	<h3><span>Search</span></h3>
+        <form id="form2" name="form2" method="post" action="" class="search_form">
+          <input type="text" name="textfield" id="textfield" value="Search the site..." title="Search the site..." /><input type="submit" name="button" id="button" value="" class="btn_search" />
+        </form>
+        <h3>Popular <span>posts</span></h3>
+        <ul class="popular_posts">
+        	<li><img src="img/pictures/popular_post1.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Cum sociis.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet varius.</p>
+                    <span class="date">20 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        	<li><img src="img/pictures/popular_post2.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Aliquam ultricies egestas.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet.</p>
+                    <span class="date">15 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        </ul>
+        <hr class="double"/>
+        <h3><span>blogroll</span></h3>
+        <ul class="blogroll">
+        	<li>Lacus metus</li>
+            <li>Tempus varius lobortis</li>
+            <li>Mattis dapibus</li>
+            <li>Integer</li>
+            <li>Consectetur</li>
+        </ul>
+        <hr class="double"/>
+        <h3>recent <span>posts</span></h3>
+        <ul class="recent_posts">
+        	<li><img src="img/pictures/recent_post1.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Cum sociis.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet varius.</p>
+                    <span class="date">20 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        	<li><img src="img/pictures/recent_post2.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Aliquam ultricies egestas.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet.</p>
+                    <span class="date">15 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        </ul>    
+        <hr class="double"/>
+		<!-- -->
+        <h3>latest <span>tweets</span></h3>
+        <ul class="latest_tweets">
+        	<li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed gravida placerat nisl, vel placerat nisl condimentum a <a href="#">lorem amet.</a></li>
+        	<li>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed gravida placerat condimentum!</li>
+        </ul>
+        <hr class="double"/>
+        <h3>flickr <span>photostream</span></h3>
+		<script type="text/javascript" src="js/jflickrfeed.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$('#flickr').jflickrfeed({
+					limit: 12,
+					qstrings: {
+					id: '50774996@N03'
+					},
+				itemTemplate: '<li><a href="{{image_b}}" style="display:block;position:relative;" class="flickrPhoto"><img src="{{image_s}}" alt="{{title}}" class="bordered1" width="56" height="56"/></a></li>'
+				}, function(){
+					$('a.flickrPhoto').prettyPhoto()
+				});
+			});
+        </script>
+        <ul id="flickr" class="flicker_widget"></ul>          
+    </div>
+<!-- EOSB -->
+	<div class="content_side">
+        <h3>feel free to <span>contact me!</span></h3>
+        <p>Integer mauris elit, aliquam eget consectetur id, vulputate non nunc. Sed est quam, sodales ut molestie nec, scelerisque id lacus. Phasellus ut nulla mi. Mauris nec arcu condimentum nisl auctor laoreet. Cras suscipit eleifend dui eget rhoncus. Etiam felis lacus, dignissim vel pretium non, vehicula ac velit. Vivamus volutpat lorem quis arcu</p>
+		<hr class="double"/>
+		<div class="contact_form">
+            <h3>Mail <span>me!</span></h3>
+            <form id="contact" name="form1" method="post" action="mail.php">
+                <input type="text" name="name" id="name" value="Name" title="Name" class="inp1" />
+                <input type="text" name="email" id="email" value="Email" title="Email" class="inp1" />
+                <input type="text" name="subject" id="subject" value="Subject" title="Subject" class="inp1" />
+                <textarea name="message" id="message" cols="45" rows="5" title="Message" class="area">Message</textarea>
+                <input type="reset" name="reset" id="reset" value="" class="btn_clear" />
+				<input type="button" name="button" id="submit" value="" class="btn_send disabled" />         
+            </form>
+        </div>
+        <div class="contact_info">
+            <h3>lorem ipsum <span>dolor</span></h3>
+            <div class="w50">
+	            <p>9090 Lorem Ipsum Dolor. <br />
+                Sit Amet, QW 90 ER 90.</p>
+                <ul class="contacts">
+                    <li class="contact_mail"><a href="#">johndoe@companyname.com</a></li>
+                    <li class="contact_skype white">companyname</li>
+                    <li class="contact_twitter"><a href="#">twitter.com/companyname</a></li>
+                </ul>
+            </div>
+            <div class="w50">
+                <ul class="contacts">
+                    <li class="contact_phone">+1 800 328 4047<br />+1 666 777 1313</li>
+                    <li class="contact_flicker"><a href="#">flickr.com/photos/companyname</a></li>
+                    <li class="contact_facebook"><a href="#">facebook.com/companyname</a></li>
+                    <li class="contact_vimeo"><a href="#">vimeo.com/companyname</a></li>
+                </ul>            	
+            </div>
+            <div class="clear"><!-- ClearFix --></div>
+            
+        </div>
+        <div class="clear"><!-- ClearFix --></div>
+        <h3>vestibulum <span>amet</span></h3>
+        <iframe width="100%" height="230" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=los+angeles&amp;aq=&amp;sll=37.0625,-95.677068&amp;sspn=53.080379,114.169922&amp;ie=UTF8&amp;hq=&amp;hnear=Los+Angeles,+California&amp;ll=34.052234,-118.243685&amp;spn=0.003427,0.006968&amp;t=m&amp;z=14&amp;output=embed" class="map"></iframe>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('.btn_send').click(function(){
+		if(!$(this).hasClass('disabled')) {
+		   $('#contact').ajaxSubmit(function(){
+		   		$('.jspPane').find('#reset').click();
+				alert('Message sent!');
+			});		
+			$(this).addClass('disabled');
+		}
+	});
+	$('input[type=text]').focus(function() {
+		if($(this).attr('readonly') || $(this).attr('readonly') == 'readonly') return false;
+		if ($(this).val() === $(this).attr('title')) {
+				$(this).val('');
+		}   
+		}).blur(function() {
+			if($(this).attr('readonly') || $(this).attr('readonly') == 'readonly') return false;
+			if ($(this).val().length === 0) {
+				$(this).val($(this).attr('title'));
+				$(this).removeClass('ok');
+			}           					
+		form_validate();             
+	}).keydown(function(){
+		if ( $(this).val() != $(this).attr('title')) {
+			$(this).addClass('ok');
+		}
+		else {
+			$(this).removeClass('ok');
+		}
+	});
+	
+	$('textarea').focus(function() {
+		if ($(this).text() === $(this).attr('title')) {
+				$(this).text('');
+			}        
+		}).blur(function() {
+		if ($(this).text().length === 0) {
+			$(this).text($(this).attr('title'));
+			$(this).removeClass('ok');
+		}         
+		else {
+			$(this).addClass('ok');
+		}		
+	});	
+});
+function form_validate() {
+	if($('#name').hasClass('ok') ) {
+		if ($('#email').hasClass('ok')) {
+			$('.btn_send').removeClass('disabled');
+		}
+		else {
+			$('.btn_send').addClass('disabled');
+		}
+	}
+	else {
+		$('.btn_send').addClass('disabled');
+	}
+}
+</script>

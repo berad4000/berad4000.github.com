@@ -1,0 +1,138 @@
+<div class="page_wrapper">
+<!-- BOSB -->
+	<div class="sidebar left">
+	   	<h3><span>Search</span></h3>
+        <form id="form2" name="form2" method="post" action="" class="search_form">
+          <input type="text" name="textfield" id="textfield" value="Search the site..."  title="Search the site..." /><input type="submit" name="button" id="button" value="" class="btn_search" />
+        </form>
+        <h3>Popular <span>posts</span></h3>
+        <ul class="popular_posts">
+        	<li><img src="img/pictures/popular_post1.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Cum sociis.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet varius.</p>
+                    <span class="date">20 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        	<li><img src="img/pictures/popular_post2.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Aliquam ultricies egestas.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet.</p>
+                    <span class="date">15 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        </ul>
+        <hr class="double"/>
+        <h3><span>blogroll</span></h3>
+        <ul class="blogroll">
+        	<li>Lacus metus</li>
+            <li>Tempus varius lobortis</li>
+            <li>Mattis dapibus</li>
+            <li>Integer</li>
+            <li>Consectetur</li>
+        </ul>
+        <hr class="double"/>
+        <h3>recent <span>posts</span></h3>
+        <ul class="recent_posts">
+        	<li><img src="img/pictures/recent_post1.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Cum sociis.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet varius.</p>
+                    <span class="date">20 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        	<li><img src="img/pictures/recent_post2.jpg" alt=""/>
+                <div>
+                	<p><span class="white">Aliquam ultricies egestas.</span> Hatoque penatibus et magnis vestibulum ipsum dolor sit amet.</p>
+                    <span class="date">15 apr 2019</span> | <span><a href="#">Read more...</a></span>
+                </div>
+            </li>
+        </ul>    
+        <hr class="double"/>    
+		<!-- -->
+        <h3>latest <span>tweets</span></h3>
+        <ul class="latest_tweets">
+        	<li>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed gravida placerat nisl, vel placerat nisl condimentum a <a href="#">lorem amet.</a></li>
+        	<li>Aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed gravida placerat condimentum!</li>
+        </ul>
+        <hr class="double"/>
+        <h3>flickr <span>photostream</span></h3>
+		<script type="text/javascript" src="js/jflickrfeed.js"></script>
+        <script type="text/javascript">
+			$(document).ready(function(){
+				$('#flickr').jflickrfeed({
+					limit: 12,
+					qstrings: {
+					id: '50774996@N03'
+					},
+				itemTemplate: '<li><a href="{{image_b}}" style="display:block;position:relative;" class="flickrPhoto"><img src="{{image_s}}" alt="{{title}}" class="bordered1" width="56" height="56"/></a></li>'
+				}, function(){
+					$('a.flickrPhoto').prettyPhoto()
+				});
+			});
+        </script>
+        <ul id="flickr" class="flicker_widget"></ul>        
+    </div>
+<!-- EOSB -->
+	<div class="content_side">
+        <h3>Cras commodo turpis sit <span>amet sapien!</span></h3>
+        <div class="featured_image"><img src="img/pictures/pic_blog1.jpg" alt="" /></div>
+        <div class="status_bar nobrd">
+            <div class="blog_date">10 apr 2019</div>
+            <div class="blog_comments"><a href="#">3 comments</a></div>
+            <a href="javascript:void(0)" class="blog_tag" title="fashion, portraits"></a>
+            <div class="blog_like">15</div>
+        </div>
+        <p>Sed lacus metus, tempus varius lobortis ut, mattis non enim. Integer consectetur dapibus nisi, congue malesuada massa vestibulum placerat. Praesent vitae blandit dolor. Maecenas et accumsan lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+        <p>Nam ut hendrerit ipsum. Aenean vitae lorem ipsum orci sed tellus pellentesque.  Maecenas et accumsan lorem. Lorem sid amet ipsum, consectetur.  <a href="#">Read more...</a></p>
+        <hr class="dotted"/>
+
+        <h3>Fusce vel adipiscing <span>nibh mattis</span></h3>
+        <div class="featured_image"></div>
+        <div class="status_bar nobrd">
+            <div class="blog_date">02 apr 2019</div>
+            <div class="blog_comments"><a href="#">1 comments</a></div>
+            <a href="javascript:void(0)" class="blog_tag" title="fashion, portraits"></a>
+            <div class="blog_like">15</div>
+        </div>
+        <p>Lacus metus, tempus varius lobortis ut, mattis non enim. Integer consectetur dapibus nisi, congue malesuada massa vestibulum placerat. Praesent vitae blandit dolor. Maecenas et accumsan lorem. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis fringilla metus. Nam ut est eu justo iaculis.</p>
+        <p class="white">Lorem sid amet ipsum dolor sit amet, cons lorem ipsum dolor ectetur.  Integer malesuada iaculis libero, in molestie lacus mollis id. Aliquam ultricies egestas nisl at congue.</p>
+        <p>Integer malesuada iaculis libero, in molestie lacus mollis id. Aliquam ultricies egestas nisl at congue. Etiam eget nibh orci, vitae ornare mauris. Fusce sit amet libero lectus, et egestas diam. Quisque lobortis cursus faucibus. <a href="#">Read more...</a></p>
+        <hr class="dotted"/>
+        
+        <ul class="pager">
+            <li><a href="#" class="left disabled"></a></li>
+            <li><a href="#" class="active">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">...</a></li>
+            <li><a href="#">15</a></li>
+            <li><a href="#">16</a></li>
+            <li><a href="#" class="right"></a></li>        
+        </ul>        
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function(){
+	$('input[type=text]').focus(function() {
+		if($(this).attr('readonly') || $(this).attr('readonly') == 'readonly') return false;
+		if ($(this).val() === $(this).attr('title')) {
+				$(this).val('');
+		}   
+		}).blur(function() {
+		if($(this).attr('readonly') || $(this).attr('readonly') == 'readonly') return false;
+		if ($(this).val().length === 0) {
+			$(this).val($(this).attr('title'));
+		}                        
+	});
+	
+	$('textarea').focus(function() {
+		if ($(this).text() === $(this).attr('title')) {
+				$(this).text('');
+			}        
+		}).blur(function() {
+		if ($(this).text().length === 0) {
+			$(this).text($(this).attr('title'));
+		}                        
+	});	
+	$('.blog_tag').tipsy({gravity: 's', fade: true});
+	
+});
+</script>

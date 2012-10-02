@@ -1,0 +1,21 @@
+<div class="page_wrapper">
+	<h3>password protected <span>gallery</span></h3>
+    <p>Metus lactus tempus varius lobortis ut, mattis non enim. Integer lorem ipsum dolor consectetur dapibus nisi, congue malesuada massa vestibulum placerat. Nam fermentum tincidunt eros in mattis. Nam lobortis gravida est a sodales.</p>
+    <hr class="dotted"/>
+    <form id="form1" name="form1" method="post" action="" class="protected">
+        <input type="text" name="pass_field" id="pass_field" /><button class="medium grey" type="button" id="enter_gallery">Enter</button>        
+    </form>
+    <script type="text/javascript">
+		$(document).ready(function(){
+			$('#enter_gallery').click(function() {
+			pass_var = $('#pass_field').val();
+				$.post("protected.php", { pass_field : pass_var}, function(data) {
+					$('#append_box').append(data);
+				});
+			});
+		});
+		
+	</script>
+    <div id="append_box"></div>
+    <div id="error"></div>
+</div>
