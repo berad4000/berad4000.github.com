@@ -627,12 +627,12 @@ header { background:#000000!important; height:24px!important}
 footer { display:none!important}
 	.btn_audio { cursor:pointer; position:fixed; left:50%; margin-left:-17px; width:34px; height:34px; background:url(../img/btn_audio.png) no-repeat 0 0; bottom:-34px}
 	
-h1 span { font-size:24px; line-height:26px; margin:10px 0 15px 0;}
-h2 span { font-size:22px; line-height:24px; margin:10px 0 15px 0;}
-h3 span { font-size:20px; line-height:22px; margin:10px 0 15px 0;}
-h4 span { font-size:18px; line-height:20px; margin:10px 0 15px 0;}
-h5 span { font-size:16px; line-height:18px; margin:10px 0 15px 0;}
-h6 span { font-size:14px; line-height:16px; margin:10px 0 15px 0;}
+h1 span { font-size:14px; line-height:26px; margin:10px 0 15px 0;}
+h2 span { font-size:12px; line-height:24px; margin:10px 0 15px 0;}
+h3 span { font-size:10px; line-height:22px; margin:10px 0 15px 0;}
+h4 span { font-size:8px; line-height:20px; margin:10px 0 15px 0;}
+h5 span { font-size:6px; line-height:18px; margin:10px 0 15px 0;}
+h6 span { font-size:4px; line-height:16px; margin:10px 0 15px 0;}
 	
 /*Lists/*
 ========*/
