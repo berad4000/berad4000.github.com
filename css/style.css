@@ -567,10 +567,10 @@ ul.flicker_widget li img { width:75px; height:auto}
 
 /*Captions
 ===========*/
-#slidecaption h1 { font-size:56px!important; line-height:60px!important;}
-#slidecaption h1 span { font-size:56px!important; line-height:60px!important; }
+#slidecaption h1 { font-size:16px!important; line-height:20px!important;}
+#slidecaption h1 span { font-size:16px!important; line-height:20px!important; }
 #slidecaption br { clear:both; display:block;}
-#slidecaption p {font-size:20px!important; line-height:20px!important;}
+#slidecaption p {font-size:16px!important; line-height:20px!important;}
 
 .area_full { width:584px; height:34px; padding:4px 5px; margin:0 0 15px 0;}
 }
