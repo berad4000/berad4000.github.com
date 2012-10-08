@@ -478,10 +478,10 @@ ul.recent_posts li div .date { color:#ffffff; padding:0; display:inline; text-al
 
 /*Captions
 ===========*/
-#slidecaption h1 { font-size:68px!important; line-height:72px!important;}
-#slidecaption h1 span { font-size:68px!important; line-height:72px!important; }
+#slidecaption h1 { font-size:14px!important; line-height:14px!important;}
+#slidecaption h1 span { font-size:14px!important; line-height:14px!important; }
 #slidecaption br { clear:both; display:block;}
-#slidecaption p {font-size:24px!important; line-height:24px!important}
+#slidecaption p {font-size:14px!important; line-height:14px!important}
 
 .area_full { width:648px; height:34px; padding:4px 5px; margin:0 0 15px 0;}
 }
