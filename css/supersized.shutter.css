@@ -52,10 +52,21 @@ License : MIT License / GPL License
 	line-height: 18px;
 	display:block!important;
 }
-#slidecaption h1 { display:block; float:right; font-size:80px; line-height:85px; background:url(../img/bg_caption.png) repeat; color:#ffffff; margin:0 0 9px 0; padding:0 2px; font-family:'Dosis', 'Dosis_ios', sans-serif;}
-#slidecaption h1 span { font-size:80px; line-height:85px; color:#ffea00; padding:0; font-family:'Dosis', 'Dosis_ios', sans-serif;}
+#slidecaption h1 { display:block; float:right; font-size:14px; line-height:20px; background:url(../img/bg_caption.png) repeat; color:#FFFFFF; margin:0 0 9px 0; padding:0 2px; font-family:'Dosis', 'Dosis_ios', sans-serif;}
+#slidecaption h1 span { font-size:14px; line-height:14px; color:#FFFFFF; padding:0; font-family:'Dosis', 'Dosis_ios', sans-serif;}
 #slidecaption br { clear:both; display:block;}
-#slidecaption p {display:block; float:right; font-size:30px; line-height:30px; background:url(../img/bg_caption.png) repeat; color:#ffffff; margin-bottom:2px; font-family:'Dosis', 'Dosis_ios', sans-serif; padding:1px 2px; text-transform:uppercase}
+#slidecaption p {
+	display: block;
+	float: right;
+	font-size: 12px;
+	line-height: 30px;
+	background: url(../img/bg_caption.png) repeat;
+	color: #999999;
+	margin-bottom: 2px;
+	font-family: 'Dosis', 'Dosis_ios', sans-serif;
+	padding: 1px 2px;
+	text-transform: uppercase
+}
 
 #navigation {
 	float: right;
