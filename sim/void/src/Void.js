@@ -516,7 +516,7 @@ var God = function ( glob, id, x, y )  {
    
  
 
-                                                                                                                                                                                                                                                                                                                                                                                                  self.graphics = {"graphics":["/sim/void/content/god/graphics/godFaceForSim.png"]};
+                                                                                                                                                                                                                                                                                                                                                                                                      self.graphics = {"graphics":["/sim/void/content/god/graphics/godFaceForSim.png"]};
 
   return self; 
 };
@@ -863,8 +863,10 @@ EventEmitter.prototype.emit = function(type) {
       er = arguments[1];
       if (er instanceof Error) {
         throw er; // Unhandled 'error' event
+      } else {
+        throw TypeError('Uncaught, unspecified "error" event.');
       }
-      throw TypeError('Uncaught, unspecified "error" event.');
+      return false;
     }
   }
 
