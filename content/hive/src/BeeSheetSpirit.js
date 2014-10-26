@@ -13,6 +13,7 @@ var BeeSheetSpirit = React.createClass({
   componentWillUnmount: function() {
     clearInterval(this.interval);
   },
+  
   render: function() {
     return (
 

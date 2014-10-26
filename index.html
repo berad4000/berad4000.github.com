@@ -20,8 +20,8 @@
     <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
     <meta name="msapplication-TileColor" content="#3372DF">
 
-    <link rel="stylesheet" href="../../styles/main.css">
-    <link rel="stylesheet" href="../../styles/layout.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/layout.css">
 
   </head>
   <body >
@@ -37,7 +37,7 @@
 <div class="container">
 
 <p class="xxlarge"  style="text-align: center;">Touch the eye and watch</p>
-<p class="xlarge"   style="text-align: center;">a shared computer simulation of intellegent bees creating honey inside a parallel universe</p>
+<p class="xlarge"   style="text-align: center;">a shared computer simulation of intellegent bees creating and eating honey inside <br/> a parallel universe</p>
 
 <br/>
 <br/>
@@ -54,51 +54,70 @@
             
             <li class="g-medium--half g-wide--1 theme--multi-device-layouts  ">
                 <a href="./content/hive/" class="themed">
-                    <span class="icon-circle--large themed--background"><i class="icon icon-multi-device-layouts"></i></span>
-                    <h3 class="large text-divider">3 </h3>
+                    <span class="icon-circle--large themed--background"><i class="icon icon-minus"></i></span>
+                    <h3 class="large text-divider">10 </h3>
                 </a>
-                <p class="large"> Hives </p>
+                <p class="large"> Galaxies </p>
             </li>
             <li class="g-medium--half g-wide--1 theme--introduction-to-media g-medium--last ">
                 <a href="./content/life/" class="themed">
-                    <span class="icon-circle--large themed--background"><i class="icon icon-introduction-to-media"></i></span>
-                    <h3 class="large text-divider">3,000 </h3>
-                </a>
-                <p class="large"> Life Forms </p>
-            </li>
-            <li class="g-medium--half g-wide--1 theme--user-input  ">
-                <a href="./content/hive/" class="themed">
                     <span class="icon-circle--large themed--background"><i class="icon icon-user-input"></i></span>
-                    <h3 class="large text-divider">1,234,888 tons</h3>
+                    <h3 class="large text-divider">1 </h3>
                 </a>
                 <p class="large"> Planets </p>
             </li>
-            
+            <li class="g-medium--half g-wide--1 theme--user-input  ">
+                <a href="./content/hive/" class="themed">
+                    <span class="icon-circle--large themed--background"><i class="icon icon-introduction-to-media"></i></span>
+                    <h3 class="large text-divider">1</h3>
+                </a>
+                <p class="large"> Territories </p>
+            </li>
+
             <li class="g-medium--half g-wide--1 theme--performance g-medium--last  g-wide--last ">
                 <a href="./content/honey/" class="themed">
-                    <span class="icon-circle--large themed--background"><i class="icon icon-performance"></i></span>
-                    <h3 class="large text-divider">3 ounces</h3>
+                    <span class="icon-circle--large themed--background"><i class="icon icon-star"></i></span>
+                    <h3 class="large text-divider">1</h3>
                 </a>
-                <p class="large"> Honey Available </p>
+                <p class="large"> Life Forms </p>
             </li>
+
+            <li class="g-medium--half g-wide--1 theme--performance g-medium--last  g-wide--last ">
+                <a href="./content/honey/" class="themed">
+                    <span class="icon-circle--large themed--background"><i class="icon icon-diamond"></i></span>
+                    <h3 class="large text-divider">1</h3>
+                </a>
+                <p class="large"> Hives </p>
+            </li>           
+            <li class="g-medium--half g-wide--1 theme--introduction-to-media g-medium--last ">
+                <a href="./content/life/" class="themed">
+                    <span class="icon-circle--large themed--background"><i class="icon icon-menu"></i></span>
+                    <h3 class="large text-divider">1</h3>
+                </a>
+                <p class="large"> Bees </p>
+            </li>
+            <li class="g-medium--half g-wide--1 theme--user-input  ">
+                <a href="./content/hive/" class="themed">
+                    <span class="icon-circle--large themed--background"><i class="icon icon-performance"></i></span>
+                    <h3 class="large text-divider">0</h3>
+                </a>
+                <p class="large"> Honey </p>
+            </li>
+
+            <li class="g-medium--half g-wide--1 theme--performance g-medium--last  g-wide--last ">
+                <a href="./content/honey/" class="themed">
+                    <span class="icon-circle--large themed--background"><i class="icon icon-question"></i></span>
+                    <h3 class="large text-divider">0</h3>
+                </a>
+                <p class="large"> Jelly </p>
+            </li>
+             
+            
         </ul>
     </div>
 </section>
 
-
-<section class="styleguide__page-header">
-    <div class="page-header">
-        <div class="container">
-            
-            <h2 class="xxlarge text-divider"> 10,343,343 years 2 months</h2>
-            
-            <p class="large page-header__excerpt g-wide--push-1 g-wide--pull-1">
-             Total Time Spent Inside the Simulation
-            </p>
-
-        </div>
-    </div>
-</section>
+<div id = 'display1' />
 
 <footer><div class="container"><p>We always need a footer.</p></div></footer>
  
@@ -118,6 +137,17 @@
     <script src="./scripts/MovieClip.js"></script> 
     <script src="./scripts/TweenMax.min.js"></script> 
     <script src="./story/Title.js"></script>
+
+    <script src="./scripts/react.js"></script>
+    <script src="./scripts/JSXTransformer.js"></script>
+
+
+    <script type="text/jsx" src="./ui/NowDisplay/NowSheetHead.js"></script>
+    
+    <script type="text/jsx" src="./ui/NowDisplay/welloHorld.js"></script>   
+    
+
+    
   
   </body>
 </html>

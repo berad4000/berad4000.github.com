@@ -11,7 +11,7 @@ var God = function ( glob, id, x, y )  {
    
  
 
-                                                                                                                                                                                                                                                                                                                                                                                                                       self.graphics = {"graphics":["/sim/void/content/god/graphics/godFaceForSim.png"]};
+                                                                                                                                                                                                                                                                                                                                                                                                                            self.graphics = {"graphics":["/sim/void/content/god/graphics/godFaceForSim.png"]};
 
   return self; 
 };

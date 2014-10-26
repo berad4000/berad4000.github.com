@@ -25,7 +25,14 @@ var Title = function ()  {
   self.layer4Mod = .1;
   
   self.create = function( glob ){
+
+   //var container = document.getElementById('now');
+   //self.score = React.renderComponent( Now ( ) , container );
     
+  }
+
+  self.cover = function(){
+
     var loc1 = "./story/content/background/backPlain.png";
     var loc2 = "./story/content/background/treeLine.png";
     var loc3 = "./story/content/background/river.png";
@@ -53,14 +60,69 @@ var Title = function ()  {
     self.display.addChild( self.layer2 );
     self.display.addChild( self.layer4 );
     self.display.addChild( self.layer5 );
-    
+
   }
 
   self.awake = function( glob ){ }
 
-  self.render = function(){  
+
+self.now = function(){
+
+
+    var bonus = 6299000; //Can go over 1 hr 45 mins
+    var bonus = 0; //Can go over 1 hr 45 mins
+
+    var a = self.glob.moment( self.glob.time + bonus  );
+    var b = self.glob.core.God;    
+    var miliseconds = a.diff(b );
+    var seconds     = a.diff(b, 'seconds');
+    var min         = a.diff(b, 'minutes');
+    var hours       = a.diff(b, 'hours');
+
+    var hourLabel   = self.glob.moment.duration( hours,     "hour").humanize();
+    
+    var message = "";
+
+    if ( hours != 0 ){
+      message += hourLabel;
+      min -= hours * 60;
+    }
+    
+    var minuteLabel = self.glob.moment.duration( min,  "minutes").humanize();
+    
+    if ( min != 0 ){
+      message +=  ' ' + minuteLabel + " ";
+      seconds -= min * 60;
+    } 
+
+    if ( seconds != 0 ) {
+      
+      miliseconds -= min * 60000;
+      miliseconds -= hours * 3600000;
+
+      //var miliMin   = hours   * 60;
+      //var miliSecs  = miliMin * 60;
+      //miliseconds -= miliSecs * 1000;
+
+      //miliseconds -= min * 36000; 
+
+
+      var value = miliseconds/1000;
+      message += value.toFixed(2) + " seconds ";
+    }
+
+    return message;
+    
+}
+
+  self.render = function(){
+
+
+
     
     if ( self.display == null ) return
+
+      //trace( Now );
 
     if ( self.ratio == null )
     {
@@ -69,6 +131,15 @@ var Title = function ()  {
     self.display.scale.y = self.ratio;
     return;
     }
+
+    //self.now();
+
+    if ( window.NowSheet == null  ) return
+      var time = self.now();
+      trace("ees " + time );
+      window.NowSheet.setState( { message: time } );
+
+    return
 
     self.rise += self.riseAmount;
 
@@ -93,6 +164,7 @@ var Title = function ()  {
 };
 
 
+
 exports = module.exports = Title;
 
 
@@ -101,6 +173,7 @@ $(document).ready(function() {
 
 var view = Title();
 view.showPercent = .66;
+view.core.glob.core.God =  view.core.glob.moment("2014-10-26");
 view.init();
 setTimeout( view.core.glob.create, 100 );
 

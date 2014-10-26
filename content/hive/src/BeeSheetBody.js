@@ -16,7 +16,7 @@ var BeeSheetBody = React.createClass({
   render: function() {
     return (
 
-      <section className="styleguide__page-header">
+    <section className="styleguide__page-header">
     <div className="page-header">
         <div className="container">
             <nav className="breadcrumbs">
